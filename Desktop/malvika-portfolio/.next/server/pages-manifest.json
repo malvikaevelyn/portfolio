@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/story-portfolio": "pages/story-portfolio.js",
+  "/personal-work": "pages/personal-work.js",
+  "/demo-reel": "pages/demo-reel.js",
+  "/": "pages/index.js",
+  "/commercial-work": "pages/commercial-work.js"
+}

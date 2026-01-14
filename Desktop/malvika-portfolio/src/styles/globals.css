@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Kerning134';
+  src: url('/fonts/kerning-134.woff2') format('woff2'),
+       url('/fonts/kerning-134.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  letter-spacing: 0.05em; /* approximate "spacing of around 50" */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trebuchet MS', 'Trebuchet', 'Arial', sans-serif;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Masonry grid styles for Personal Work section */
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Variant sizes for visual variety */
+.masonry-item-1 img { transform-origin: center; }
+.masonry-item-2 img { transform-origin: center; }
+.masonry-item-3 img { transform-origin: center; }
+.masonry-item-4 img { transform-origin: center; }
+.masonry-item-5 img { transform-origin: center; }
